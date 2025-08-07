@@ -1,12 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { 
-  GithubIcon, 
-  LinkedinIcon, 
-  MailIcon, 
-  PhoneIcon, 
+import {
+  GithubIcon,
+  LinkedinIcon,
+  MailIcon,
+  PhoneIcon,
   ExternalLinkIcon,
   DownloadIcon,
   MapPinIcon,
@@ -17,7 +23,7 @@ import {
   DatabaseIcon,
   PaletteIcon,
   ServerIcon,
-  MonitorIcon
+  MonitorIcon,
 } from "lucide-react";
 
 export default function Index() {
@@ -29,34 +35,37 @@ export default function Index() {
     { name: "Git/GitHub", icon: CodeIcon, category: "Tools" },
     { name: "Responsive Design", icon: PaletteIcon, category: "Design" },
     { name: "SQL", icon: DatabaseIcon, category: "Database" },
-    { name: "TypeScript", icon: BrainCircuitIcon, category: "Programming" }
+    { name: "TypeScript", icon: BrainCircuitIcon, category: "Programming" },
   ];
 
   const projects = [
     {
       title: "Personal Portfolio Website",
-      description: "A responsive portfolio website built with React and Tailwind CSS showcasing my skills and projects.",
+      description:
+        "A responsive portfolio website built with React and Tailwind CSS showcasing my skills and projects.",
       tech: ["React", "TypeScript", "Tailwind CSS"],
       github: "#",
       live: "#",
-      status: "Completed"
+      status: "Completed",
     },
     {
       title: "Todo List Application",
-      description: "A full-stack todo application with user authentication, CRUD operations, and real-time updates.",
+      description:
+        "A full-stack todo application with user authentication, CRUD operations, and real-time updates.",
       tech: ["React", "Node.js", "MongoDB", "Express"],
       github: "#",
       live: "#",
-      status: "In Progress"
+      status: "In Progress",
     },
     {
       title: "Weather Dashboard",
-      description: "A weather dashboard that fetches real-time weather data from API and displays forecasts.",
+      description:
+        "A weather dashboard that fetches real-time weather data from API and displays forecasts.",
       tech: ["JavaScript", "API Integration", "CSS"],
       github: "#",
       live: "#",
-      status: "Completed"
-    }
+      status: "Completed",
+    },
   ];
 
   return (
@@ -72,10 +81,30 @@ export default function Index() {
               <span className="font-bold text-xl">Portfolio</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
-              <a href="#skills" className="text-muted-foreground hover:text-foreground transition-colors">Skills</a>
-              <a href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</a>
-              <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+              <a
+                href="#about"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                About
+              </a>
+              <a
+                href="#skills"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Skills
+              </a>
+              <a
+                href="#projects"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Projects
+              </a>
+              <a
+                href="#contact"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Contact
+              </a>
             </div>
             <Button variant="outline" size="sm">
               <DownloadIcon className="h-4 w-4 mr-2" />
@@ -95,18 +124,21 @@ export default function Index() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
               Hi, I'm <span className="text-primary">Your Name</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-2">Aspiring Full-Stack Developer</p>
+            <p className="text-xl text-muted-foreground mb-2">
+              Aspiring Full-Stack Developer
+            </p>
             <div className="flex items-center justify-center text-muted-foreground mb-8">
               <MapPinIcon className="h-4 w-4 mr-1" />
               <span>Your City, Country</span>
             </div>
           </div>
-          
+
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-            Passionate about creating efficient, user-friendly web applications. Currently learning modern web technologies 
-            and eager to contribute to innovative projects while growing my development skills.
+            Passionate about creating efficient, user-friendly web applications.
+            Currently learning modern web technologies and eager to contribute
+            to innovative projects while growing my development skills.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button size="lg" className="text-lg px-8">
               <MailIcon className="h-5 w-5 mr-2" />
@@ -141,14 +173,16 @@ export default function Index() {
               <div>
                 <h3 className="text-xl font-semibold mb-4">My Journey</h3>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  I'm a motivated computer science student passionate about web development and technology. 
-                  Through coursework, personal projects, and self-learning, I've developed a solid foundation 
+                  I'm a motivated computer science student passionate about web
+                  development and technology. Through coursework, personal
+                  projects, and self-learning, I've developed a solid foundation
                   in programming fundamentals and modern web technologies.
                 </p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  I enjoy solving problems through code and am always eager to learn new technologies. 
-                  My goal is to contribute to meaningful projects while continuously growing my skills 
-                  in full-stack development.
+                  I enjoy solving problems through code and am always eager to
+                  learn new technologies. My goal is to contribute to meaningful
+                  projects while continuously growing my skills in full-stack
+                  development.
                 </p>
                 <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                   <div className="flex items-center">
@@ -164,7 +198,9 @@ export default function Index() {
                 <CardContent className="space-y-4">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Education:</span>
-                    <span className="font-medium">Computer Science Student</span>
+                    <span className="font-medium">
+                      Computer Science Student
+                    </span>
                   </div>
                   <Separator />
                   <div className="flex justify-between">
@@ -192,14 +228,21 @@ export default function Index() {
       <section id="skills" className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">Skills & Technologies</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Skills & Technologies
+            </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {skills.map((skill) => (
-                <Card key={skill.name} className="hover:shadow-lg transition-shadow">
+                <Card
+                  key={skill.name}
+                  className="hover:shadow-lg transition-shadow"
+                >
                   <CardContent className="p-6 text-center">
                     <skill.icon className="h-8 w-8 mx-auto mb-3 text-primary" />
                     <h3 className="font-medium mb-1">{skill.name}</h3>
-                    <p className="text-sm text-muted-foreground">{skill.category}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {skill.category}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -212,14 +255,25 @@ export default function Index() {
       <section id="projects" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Featured Projects
+            </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project) => (
-                <Card key={project.title} className="hover:shadow-lg transition-shadow">
+                <Card
+                  key={project.title}
+                  className="hover:shadow-lg transition-shadow"
+                >
                   <CardHeader>
                     <div className="flex justify-between items-start">
                       <CardTitle className="text-lg">{project.title}</CardTitle>
-                      <Badge variant={project.status === "Completed" ? "default" : "secondary"}>
+                      <Badge
+                        variant={
+                          project.status === "Completed"
+                            ? "default"
+                            : "secondary"
+                        }
+                      >
                         {project.status}
                       </Badge>
                     </div>
@@ -263,25 +317,29 @@ export default function Index() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8">Let's Connect</h2>
             <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities, collaborations, or just chatting about technology. 
-              Feel free to reach out!
+              I'm always open to discussing new opportunities, collaborations,
+              or just chatting about technology. Feel free to reach out!
             </p>
-            
+
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <Card>
                 <CardContent className="p-8 text-center">
                   <MailIcon className="h-12 w-12 mx-auto mb-4 text-primary" />
                   <h3 className="font-semibold mb-2">Email</h3>
-                  <p className="text-muted-foreground mb-4">your.email@example.com</p>
+                  <p className="text-muted-foreground mb-4">
+                    your.email@example.com
+                  </p>
                   <Button variant="outline">Send Message</Button>
                 </CardContent>
               </Card>
-              
+
               <Card>
                 <CardContent className="p-8 text-center">
                   <PhoneIcon className="h-12 w-12 mx-auto mb-4 text-primary" />
                   <h3 className="font-semibold mb-2">Phone</h3>
-                  <p className="text-muted-foreground mb-4">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground mb-4">
+                    +1 (555) 123-4567
+                  </p>
                   <Button variant="outline">Call Now</Button>
                 </CardContent>
               </Card>
