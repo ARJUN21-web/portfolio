@@ -169,17 +169,8 @@ export default function Index() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-xl font-semibold mb-4">My Journey</h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  I'm a motivated computer science student passionate about web
-                  development and technology. Through coursework, personal
-                  projects, and self-learning, I've developed a solid foundation
-                  in programming fundamentals and modern web technologies.
-                </p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  I enjoy solving problems through code and am always eager to
-                  learn new technologies. My goal is to contribute to meaningful
-                  projects while continuously growing my skills in full-stack
-                  development.
+                  I am a Computer Science student and an aspiring astrophysicist. Since childhood, I've been passionate about particle physics and have spent a lot of time exploring and learning about it. My curiosity drives me to continuously seek knowledge and grow every day. My ultimate goal is to contribute to groundbreaking research in astrophysics and particle physics, pushing the boundaries of what we know about the universe.
                 </p>
                 <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                   <div className="flex items-center">
