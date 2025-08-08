@@ -41,7 +41,7 @@ export default function Index() {
       description:
         "A responsive portfolio website built with React and Tailwind CSS showcasing my skills and projects.",
       tech: ["React", "TypeScript", "Tailwind CSS"],
-      github: "#",
+      github: "https://github.com/sathvik-1506",
       live: "#",
       status: "Completed",
     },
@@ -50,7 +50,7 @@ export default function Index() {
       description:
         "A full-stack todo application with user authentication, CRUD operations, and real-time updates.",
       tech: ["React", "Node.js", "MongoDB", "Express"],
-      github: "#",
+      github: "https://github.com/sathvik-1506",
       live: "#",
       status: "In Progress",
     },
@@ -59,7 +59,7 @@ export default function Index() {
       description:
         "A weather dashboard that fetches real-time weather data from API and displays forecasts.",
       tech: ["JavaScript", "API Integration", "CSS"],
-      github: "#",
+      github: "https://github.com/sathvik-1506",
       live: "#",
       status: "Completed",
     },
