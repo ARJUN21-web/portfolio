@@ -148,8 +148,10 @@ export default function Index() {
           </div>
 
           <div className="flex justify-center space-x-6">
-            <Button variant="ghost" size="icon" className="h-12 w-12">
-              <GithubIcon className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
+              <a href="https://github.com/sathvik-1506" target="_blank" rel="noopener noreferrer">
+                <GithubIcon className="h-6 w-6" />
+              </a>
             </Button>
             <Button variant="ghost" size="icon" className="h-12 w-12">
               <LinkedinIcon className="h-6 w-6" />
@@ -290,9 +292,11 @@ export default function Index() {
               ))}
             </div>
             <div className="text-center mt-12">
-              <Button variant="outline" size="lg">
-                <GithubIcon className="h-5 w-5 mr-2" />
-                View All Projects on GitHub
+              <Button variant="outline" size="lg" asChild>
+                <a href="https://github.com/sathvik-1506" target="_blank" rel="noopener noreferrer">
+                  <GithubIcon className="h-5 w-5 mr-2" />
+                  View All Projects on GitHub
+                </a>
               </Button>
             </div>
           </div>
@@ -334,8 +338,10 @@ export default function Index() {
             </div>
 
             <div className="flex justify-center space-x-6">
-              <Button variant="ghost" size="icon" className="h-14 w-14">
-                <GithubIcon className="h-7 w-7" />
+              <Button variant="ghost" size="icon" className="h-14 w-14" asChild>
+                <a href="https://github.com/sathvik-1506" target="_blank" rel="noopener noreferrer">
+                  <GithubIcon className="h-7 w-7" />
+                </a>
               </Button>
               <Button variant="ghost" size="icon" className="h-14 w-14">
                 <LinkedinIcon className="h-7 w-7" />
