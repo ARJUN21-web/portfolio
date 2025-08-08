@@ -153,8 +153,10 @@ export default function Index() {
                 <GithubIcon className="h-6 w-6" />
               </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12">
-              <LinkedinIcon className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
+              <a href="https://www.linkedin.com/in/damasani-nagasathvik-810753332" target="_blank" rel="noopener noreferrer">
+                <LinkedinIcon className="h-6 w-6" />
+              </a>
             </Button>
             <Button variant="ghost" size="icon" className="h-12 w-12">
               <MailIcon className="h-6 w-6" />
@@ -343,8 +345,10 @@ export default function Index() {
                   <GithubIcon className="h-7 w-7" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="h-14 w-14">
-                <LinkedinIcon className="h-7 w-7" />
+              <Button variant="ghost" size="icon" className="h-14 w-14" asChild>
+                <a href="https://www.linkedin.com/in/damasani-nagasathvik-810753332" target="_blank" rel="noopener noreferrer">
+                  <LinkedinIcon className="h-7 w-7" />
+                </a>
               </Button>
               <Button variant="ghost" size="icon" className="h-14 w-14">
                 <MailIcon className="h-7 w-7" />
