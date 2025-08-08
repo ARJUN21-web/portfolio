@@ -29,13 +29,10 @@ import {
 export default function Index() {
   const skills = [
     { name: "HTML/CSS", icon: CodeIcon, category: "Frontend" },
-    { name: "JavaScript", icon: BrainCircuitIcon, category: "Programming" },
-    { name: "React", icon: MonitorIcon, category: "Frontend" },
-    { name: "Node.js", icon: ServerIcon, category: "Backend" },
+    { name: "Python", icon: BrainCircuitIcon, category: "Programming" },
+    { name: "Java", icon: BrainCircuitIcon, category: "Programming" },
+    { name: "C (Current)", icon: BrainCircuitIcon, category: "Programming" },
     { name: "Git/GitHub", icon: CodeIcon, category: "Tools" },
-    { name: "Responsive Design", icon: PaletteIcon, category: "Design" },
-    { name: "SQL", icon: DatabaseIcon, category: "Database" },
-    { name: "TypeScript", icon: BrainCircuitIcon, category: "Programming" },
   ];
 
   const projects = [
@@ -44,7 +41,7 @@ export default function Index() {
       description:
         "A responsive portfolio website built with React and Tailwind CSS showcasing my skills and projects.",
       tech: ["React", "TypeScript", "Tailwind CSS"],
-      github: "#",
+      github: "https://github.com/sathvik-1506",
       live: "#",
       status: "Completed",
     },
@@ -53,7 +50,7 @@ export default function Index() {
       description:
         "A full-stack todo application with user authentication, CRUD operations, and real-time updates.",
       tech: ["React", "Node.js", "MongoDB", "Express"],
-      github: "#",
+      github: "https://github.com/sathvik-1506",
       live: "#",
       status: "In Progress",
     },
@@ -62,7 +59,7 @@ export default function Index() {
       description:
         "A weather dashboard that fetches real-time weather data from API and displays forecasts.",
       tech: ["JavaScript", "API Integration", "CSS"],
-      github: "#",
+      github: "https://github.com/sathvik-1506",
       live: "#",
       status: "Completed",
     },
@@ -122,27 +119,30 @@ export default function Index() {
               <UserIcon className="h-16 w-16 text-primary-foreground" />
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
-              Hi, I'm <span className="text-primary">Your Name</span>
+              Hi, I'm{" "}
+              <span className="text-primary">Damasani Naga Sathvik</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-2">
-              Aspiring Full-Stack Developer
+              Aspiring astrophysicist
             </p>
             <div className="flex items-center justify-center text-muted-foreground mb-8">
               <MapPinIcon className="h-4 w-4 mr-1" />
-              <span>Your City, Country</span>
+              <span>Tirupati,India</span>
             </div>
           </div>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-            Passionate about creating efficient, user-friendly web applications.
-            Currently learning modern web technologies and eager to contribute
-            to innovative projects while growing my development skills.
+            Passionate in acquiring knowledge relentlessly. Always enthuse to
+            research in various fields of physics with the skills I have in
+            computation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="text-lg px-8">
-              <MailIcon className="h-5 w-5 mr-2" />
-              Get In Touch
+            <Button size="lg" className="text-lg px-8" asChild>
+              <a href="mailto:dnagasathvik@gmail.com">
+                <MailIcon className="h-5 w-5 mr-2" />
+                Get In Touch
+              </a>
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8">
               <DownloadIcon className="h-5 w-5 mr-2" />
@@ -151,14 +151,28 @@ export default function Index() {
           </div>
 
           <div className="flex justify-center space-x-6">
-            <Button variant="ghost" size="icon" className="h-12 w-12">
-              <GithubIcon className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
+              <a
+                href="https://github.com/sathvik-1506"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GithubIcon className="h-6 w-6" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12">
-              <LinkedinIcon className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
+              <a
+                href="https://www.linkedin.com/in/damasani-nagasathvik-810753332"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkedinIcon className="h-6 w-6" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12">
-              <MailIcon className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
+              <a href="mailto:dnagasathvik@gmail.com">
+                <MailIcon className="h-6 w-6" />
+              </a>
             </Button>
           </div>
         </div>
@@ -172,17 +186,15 @@ export default function Index() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-xl font-semibold mb-4">My Journey</h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  I'm a motivated computer science student passionate about web
-                  development and technology. Through coursework, personal
-                  projects, and self-learning, I've developed a solid foundation
-                  in programming fundamentals and modern web technologies.
-                </p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  I enjoy solving problems through code and am always eager to
-                  learn new technologies. My goal is to contribute to meaningful
-                  projects while continuously growing my skills in full-stack
-                  development.
+                  I am a Computer Science student and an aspiring
+                  astrophysicist. Since childhood, I've been passionate about
+                  particle physics and have spent a lot of time exploring and
+                  learning about it. My curiosity drives me to continuously seek
+                  knowledge and grow every day. My ultimate goal is to
+                  contribute to groundbreaking research in astrophysics and
+                  particle physics, pushing the boundaries of what we know about
+                  the universe.
                 </p>
                 <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                   <div className="flex items-center">
@@ -302,9 +314,15 @@ export default function Index() {
               ))}
             </div>
             <div className="text-center mt-12">
-              <Button variant="outline" size="lg">
-                <GithubIcon className="h-5 w-5 mr-2" />
-                View All Projects on GitHub
+              <Button variant="outline" size="lg" asChild>
+                <a
+                  href="https://github.com/sathvik-1506"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GithubIcon className="h-5 w-5 mr-2" />
+                  View All Projects on GitHub
+                </a>
               </Button>
             </div>
           </div>
@@ -327,9 +345,11 @@ export default function Index() {
                   <MailIcon className="h-12 w-12 mx-auto mb-4 text-primary" />
                   <h3 className="font-semibold mb-2">Email</h3>
                   <p className="text-muted-foreground mb-4">
-                    your.email@example.com
+                    dnagasathvik@gmail.com
                   </p>
-                  <Button variant="outline">Send Message</Button>
+                  <Button variant="outline" asChild>
+                    <a href="mailto:dnagasathvik@gmail.com">Send Message</a>
+                  </Button>
                 </CardContent>
               </Card>
 
@@ -346,14 +366,28 @@ export default function Index() {
             </div>
 
             <div className="flex justify-center space-x-6">
-              <Button variant="ghost" size="icon" className="h-14 w-14">
-                <GithubIcon className="h-7 w-7" />
+              <Button variant="ghost" size="icon" className="h-14 w-14" asChild>
+                <a
+                  href="https://github.com/sathvik-1506"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GithubIcon className="h-7 w-7" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="h-14 w-14">
-                <LinkedinIcon className="h-7 w-7" />
+              <Button variant="ghost" size="icon" className="h-14 w-14" asChild>
+                <a
+                  href="https://www.linkedin.com/in/damasani-nagasathvik-810753332"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkedinIcon className="h-7 w-7" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="h-14 w-14">
-                <MailIcon className="h-7 w-7" />
+              <Button variant="ghost" size="icon" className="h-14 w-14" asChild>
+                <a href="mailto:dnagasathvik@gmail.com">
+                  <MailIcon className="h-7 w-7" />
+                </a>
               </Button>
             </div>
           </div>
