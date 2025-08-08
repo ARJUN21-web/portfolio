@@ -29,13 +29,10 @@ import {
 export default function Index() {
   const skills = [
     { name: "HTML/CSS", icon: CodeIcon, category: "Frontend" },
-    { name: "JavaScript", icon: BrainCircuitIcon, category: "Programming" },
-    { name: "React", icon: MonitorIcon, category: "Frontend" },
-    { name: "Node.js", icon: ServerIcon, category: "Backend" },
+    { name: "Python", icon: BrainCircuitIcon, category: "Programming" },
+    { name: "Java", icon: BrainCircuitIcon, category: "Programming" },
+    { name: "C (Current)", icon: BrainCircuitIcon, category: "Programming" },
     { name: "Git/GitHub", icon: CodeIcon, category: "Tools" },
-    { name: "Responsive Design", icon: PaletteIcon, category: "Design" },
-    { name: "SQL", icon: DatabaseIcon, category: "Database" },
-    { name: "TypeScript", icon: BrainCircuitIcon, category: "Programming" },
   ];
 
   const projects = [
