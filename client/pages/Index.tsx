@@ -119,21 +119,21 @@ export default function Index() {
               <UserIcon className="h-16 w-16 text-primary-foreground" />
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
-              Hi, I'm <span className="text-primary">Your Name</span>
+              Hi, I'm <span className="text-primary">Damasani Naga Sathvik</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-2">
-              Aspiring Full-Stack Developer
+              Aspiring astrophysicist
             </p>
             <div className="flex items-center justify-center text-muted-foreground mb-8">
               <MapPinIcon className="h-4 w-4 mr-1" />
-              <span>Your City, Country</span>
+              <span>Tirupati,India</span>
             </div>
           </div>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-            Passionate about creating efficient, user-friendly web applications.
-            Currently learning modern web technologies and eager to contribute
-            to innovative projects while growing my development skills.
+            Passionate in acquiring knowledge relentlessly. Always enthuse
+            to research in various fields of physics with the skills I have
+            in computation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
