@@ -137,9 +137,11 @@ export default function Index() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="text-lg px-8">
-              <MailIcon className="h-5 w-5 mr-2" />
-              Get In Touch
+            <Button size="lg" className="text-lg px-8" asChild>
+              <a href="mailto:dnagasathvik@gmail.com">
+                <MailIcon className="h-5 w-5 mr-2" />
+                Get In Touch
+              </a>
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8">
               <DownloadIcon className="h-5 w-5 mr-2" />
@@ -158,8 +160,10 @@ export default function Index() {
                 <LinkedinIcon className="h-6 w-6" />
               </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12">
-              <MailIcon className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
+              <a href="mailto:dnagasathvik@gmail.com">
+                <MailIcon className="h-6 w-6" />
+              </a>
             </Button>
           </div>
         </div>
@@ -321,9 +325,13 @@ export default function Index() {
                   <MailIcon className="h-12 w-12 mx-auto mb-4 text-primary" />
                   <h3 className="font-semibold mb-2">Email</h3>
                   <p className="text-muted-foreground mb-4">
-                    your.email@example.com
+                    dnagasathvik@gmail.com
                   </p>
-                  <Button variant="outline">Send Message</Button>
+                  <Button variant="outline" asChild>
+                    <a href="mailto:dnagasathvik@gmail.com">
+                      Send Message
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
 
@@ -350,8 +358,10 @@ export default function Index() {
                   <LinkedinIcon className="h-7 w-7" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="h-14 w-14">
-                <MailIcon className="h-7 w-7" />
+              <Button variant="ghost" size="icon" className="h-14 w-14" asChild>
+                <a href="mailto:dnagasathvik@gmail.com">
+                  <MailIcon className="h-7 w-7" />
+                </a>
               </Button>
             </div>
           </div>
