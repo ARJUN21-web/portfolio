@@ -222,7 +222,9 @@ export default function Index() {
                   <Separator />
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Interests:</span>
-                    <span className="font-medium">Astrophysics and Particle Physics</span>
+                    <span className="font-medium">
+                      Astrophysics and Particle Physics
+                    </span>
                   </div>
                   <Separator />
                   <div className="flex justify-between">
