@@ -123,7 +123,7 @@ export default function Index() {
               <span className="text-primary">Damasani Naga Sathvik</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-2">
-              Aspiring astrophysicist
+              Aspiring Astrophysicist
             </p>
             <div className="flex items-center justify-center text-muted-foreground mb-8">
               <MapPinIcon className="h-4 w-4 mr-1" />
