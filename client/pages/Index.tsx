@@ -45,24 +45,6 @@ export default function Index() {
       live: "#",
       status: "Completed",
     },
-    {
-      title: "Todo List Application",
-      description:
-        "A full-stack todo application with user authentication, CRUD operations, and real-time updates.",
-      tech: ["React", "Node.js", "MongoDB", "Express"],
-      github: "https://github.com/sathvik-1506",
-      live: "#",
-      status: "In Progress",
-    },
-    {
-      title: "Weather Dashboard",
-      description:
-        "A weather dashboard that fetches real-time weather data from API and displays forecasts.",
-      tech: ["JavaScript", "API Integration", "CSS"],
-      github: "https://github.com/sathvik-1506",
-      live: "#",
-      status: "Completed",
-    },
   ];
 
   return (
@@ -123,7 +105,7 @@ export default function Index() {
               <span className="text-primary">Damasani Naga Sathvik</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-2">
-              Aspiring Astrophysicist
+              Aspiring Particle Physicist
             </p>
             <div className="flex items-center justify-center text-muted-foreground mb-8">
               <MapPinIcon className="h-4 w-4 mr-1" />
@@ -360,7 +342,7 @@ export default function Index() {
                   <PhoneIcon className="h-12 w-12 mx-auto mb-4 text-primary" />
                   <h3 className="font-semibold mb-2">Phone</h3>
                   <p className="text-muted-foreground mb-4">
-                    +1 (555) 123-4567
+                    +91 7675975489
                   </p>
                   <Button variant="outline">Call Now</Button>
                 </CardContent>
@@ -400,7 +382,7 @@ export default function Index() {
       <footer className="border-t bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-muted-foreground">
-            <p>&copy; 2024 Your Name. Built with React and Tailwind CSS.</p>
+            <p>&copy; 2024 Damasani Naga Sathvik.</p>
           </div>
         </div>
       </footer>
