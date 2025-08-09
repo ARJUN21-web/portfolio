@@ -27,25 +27,25 @@ import {
 } from "lucide-react";
 
 export default function Index() {
-  const handleEmailClick = (e: React.MouseEvent) => {
+  const handleEmailClick = () => {
     const email = 'dnagasathvik@gmail.com';
-    const subject = 'Contact from Portfolio';
-    const body = 'Hi Damasani,\n\nI found your portfolio and would like to connect.\n\nBest regards,';
+    const subject = 'Contact from Portfolio Website';
+    const body = 'Hi Damasani,\n\nI found your portfolio and would like to get in touch.\n\nBest regards,';
 
-    // Try to open default email client
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    // Fallback: Copy email to clipboard if mailto doesn't work
-    try {
-      window.location.href = mailtoLink;
-    } catch (error) {
-      navigator.clipboard.writeText(email).then(() => {
-        alert(`Email address copied to clipboard: ${email}`);
-      }).catch(() => {
-        // Final fallback: show email in alert
-        alert(`Please email me at: ${email}`);
-      });
-    }
+    // Create a temporary link and click it
+    const link = document.createElement('a');
+    link.href = mailtoLink;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Show confirmation to user
+    setTimeout(() => {
+      alert(`Opening email client for: ${email}\n\nIf your email client didn't open, please email me directly at: ${email}`);
+    }, 100);
   };
 
   const downloadResume = () => {
