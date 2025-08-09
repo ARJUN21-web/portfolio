@@ -344,7 +344,9 @@ export default function Index() {
                   <p className="text-muted-foreground mb-4">
                     +91 7675975489
                   </p>
-                  <Button variant="outline">Call Now</Button>
+                  <Button variant="outline" asChild>
+                    <a href="tel:+917675975489">Call Now</a>
+                  </Button>
                 </CardContent>
               </Card>
             </div>
