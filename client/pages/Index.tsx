@@ -28,23 +28,27 @@ import {
 
 export default function Index() {
   const handleEmailClick = () => {
-    const email = 'dnagasathvik@gmail.com';
+    const email = "dnagasathvik@gmail.com";
 
     // Direct mailto approach - most reliable
-    window.open(`mailto:${email}`, '_self');
+    window.open(`mailto:${email}`, "_self");
 
     // Show email address as backup
-    console.log('Email:', email);
+    console.log("Email:", email);
 
     // Optional: Show notification
     setTimeout(() => {
-      if (confirm(`Opening email for: ${email}\n\nClick OK if your email client opened, or Cancel to copy the email address.`)) {
+      if (
+        confirm(
+          `Opening email for: ${email}\n\nClick OK if your email client opened, or Cancel to copy the email address.`,
+        )
+      ) {
         return;
       } else {
         // Copy to clipboard if available
         if (navigator.clipboard) {
           navigator.clipboard.writeText(email);
-          alert('Email address copied to clipboard!');
+          alert("Email address copied to clipboard!");
         } else {
           alert(`Please email me at: ${email}`);
         }
@@ -78,11 +82,11 @@ Astrophysics and Particle Physics
 STATUS:
 Open to Work - Available for opportunities`;
 
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
+    const blob = new Blob([resumeContent], { type: "text/plain" });
     const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     link.href = url;
-    link.download = 'Damasani_Naga_Sathvik_Resume.txt';
+    link.download = "Damasani_Naga_Sathvik_Resume.txt";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -181,11 +185,20 @@ Open to Work - Available for opportunities`;
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="text-lg px-8" onClick={handleEmailClick}>
+            <Button
+              size="lg"
+              className="text-lg px-8"
+              onClick={handleEmailClick}
+            >
               <MailIcon className="h-5 w-5 mr-2" />
               Get In Touch
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8" onClick={downloadResume}>
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-lg px-8"
+              onClick={downloadResume}
+            >
               <DownloadIcon className="h-5 w-5 mr-2" />
               Download Resume
             </Button>
@@ -210,7 +223,12 @@ Open to Work - Available for opportunities`;
                 <LinkedinIcon className="h-6 w-6" />
               </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12" onClick={handleEmailClick}>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="h-12 w-12"
+              onClick={handleEmailClick}
+            >
               <MailIcon className="h-6 w-6" />
             </Button>
           </div>
@@ -398,9 +416,7 @@ Open to Work - Available for opportunities`;
                 <CardContent className="p-8 text-center">
                   <PhoneIcon className="h-12 w-12 mx-auto mb-4 text-primary" />
                   <h3 className="font-semibold mb-2">Phone</h3>
-                  <p className="text-muted-foreground mb-4">
-                    +91 7675975489
-                  </p>
+                  <p className="text-muted-foreground mb-4">+91 7675975489</p>
                   <Button variant="outline" asChild>
                     <a href="tel:+917675975489">Call Now</a>
                   </Button>
@@ -427,7 +443,12 @@ Open to Work - Available for opportunities`;
                   <LinkedinIcon className="h-7 w-7" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="h-14 w-14" onClick={handleEmailClick}>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-14 w-14"
+                onClick={handleEmailClick}
+              >
                 <MailIcon className="h-7 w-7" />
               </Button>
             </div>
