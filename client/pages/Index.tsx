@@ -197,7 +197,7 @@ Open to Work - Available for opportunities`;
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-muted/30">
+      <section id="about" className="py-20 bg-muted border-y">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
@@ -257,7 +257,7 @@ Open to Work - Available for opportunities`;
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20">
+      <section id="skills" className="py-20 bg-card border-y shadow-sm">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">
@@ -267,7 +267,7 @@ Open to Work - Available for opportunities`;
               {skills.map((skill) => (
                 <Card
                   key={skill.name}
-                  className="hover:shadow-lg transition-shadow"
+                  className="hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/20 bg-background"
                 >
                   <CardContent className="p-6 text-center">
                     <skill.icon className="h-8 w-8 mx-auto mb-3 text-primary" />
