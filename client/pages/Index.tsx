@@ -27,6 +27,42 @@ import {
 } from "lucide-react";
 
 export default function Index() {
+  const downloadResume = () => {
+    const resumeContent = `DAMASANI NAGA SATHVIK
+Aspiring Particle Physicist
+Tirupati, India
+
+Email: dnagasathvik@gmail.com
+Phone: +91 7675975489
+GitHub: https://github.com/sathvik-1506
+LinkedIn: https://www.linkedin.com/in/damasani-nagasathvik-810753332
+
+ABOUT:
+I am a Computer Science student and an aspiring astrophysicist. Since childhood, I've been passionate about particle physics and have spent a lot of time exploring and learning about it. My curiosity drives me to continuously seek knowledge and grow every day. My ultimate goal is to contribute to groundbreaking research in astrophysics and particle physics, pushing the boundaries of what we know about the universe.
+
+SKILLS:
+• HTML/CSS
+• Python
+• Java
+• C (Current)
+• Git/GitHub
+
+INTERESTS:
+Astrophysics and Particle Physics
+
+STATUS:
+Open to Work - Available for opportunities`;
+
+    const blob = new Blob([resumeContent], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Damasani_Naga_Sathvik_Resume.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
   const skills = [
     { name: "HTML/CSS", icon: CodeIcon, category: "Frontend" },
     { name: "Python", icon: BrainCircuitIcon, category: "Programming" },
@@ -85,7 +121,7 @@ export default function Index() {
                 Contact
               </a>
             </div>
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" onClick={downloadResume}>
               <DownloadIcon className="h-4 w-4 mr-2" />
               Resume
             </Button>
@@ -126,7 +162,7 @@ export default function Index() {
                 Get In Touch
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8">
+            <Button variant="outline" size="lg" className="text-lg px-8" onClick={downloadResume}>
               <DownloadIcon className="h-5 w-5 mr-2" />
               Download Resume
             </Button>
