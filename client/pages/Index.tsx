@@ -177,11 +177,9 @@ Open to Work - Available for opportunities`;
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="text-lg px-8" asChild>
-              <a href="mailto:dnagasathvik@gmail.com">
-                <MailIcon className="h-5 w-5 mr-2" />
-                Get In Touch
-              </a>
+            <Button size="lg" className="text-lg px-8" onClick={handleEmailClick}>
+              <MailIcon className="h-5 w-5 mr-2" />
+              Get In Touch
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8" onClick={downloadResume}>
               <DownloadIcon className="h-5 w-5 mr-2" />
@@ -208,10 +206,8 @@ Open to Work - Available for opportunities`;
                 <LinkedinIcon className="h-6 w-6" />
               </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
-              <a href="mailto:dnagasathvik@gmail.com">
-                <MailIcon className="h-6 w-6" />
-              </a>
+            <Button variant="ghost" size="icon" className="h-12 w-12" onClick={handleEmailClick}>
+              <MailIcon className="h-6 w-6" />
             </Button>
           </div>
         </div>
@@ -388,8 +384,8 @@ Open to Work - Available for opportunities`;
                   <p className="text-muted-foreground mb-4">
                     dnagasathvik@gmail.com
                   </p>
-                  <Button variant="outline" asChild>
-                    <a href="mailto:dnagasathvik@gmail.com">Send Message</a>
+                  <Button variant="outline" onClick={handleEmailClick}>
+                    Send Message
                   </Button>
                 </CardContent>
               </Card>
@@ -427,10 +423,8 @@ Open to Work - Available for opportunities`;
                   <LinkedinIcon className="h-7 w-7" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="h-14 w-14" asChild>
-                <a href="mailto:dnagasathvik@gmail.com">
-                  <MailIcon className="h-7 w-7" />
-                </a>
+              <Button variant="ghost" size="icon" className="h-14 w-14" onClick={handleEmailClick}>
+                <MailIcon className="h-7 w-7" />
               </Button>
             </div>
           </div>
