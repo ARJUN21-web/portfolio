@@ -29,23 +29,27 @@ import {
 export default function Index() {
   const handleEmailClick = () => {
     const email = 'dnagasathvik@gmail.com';
-    const subject = 'Contact from Portfolio Website';
-    const body = 'Hi Damasani,\n\nI found your portfolio and would like to get in touch.\n\nBest regards,';
 
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    // Direct mailto approach - most reliable
+    window.open(`mailto:${email}`, '_self');
 
-    // Create a temporary link and click it
-    const link = document.createElement('a');
-    link.href = mailtoLink;
-    link.target = '_blank';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Show email address as backup
+    console.log('Email:', email);
 
-    // Show confirmation to user
+    // Optional: Show notification
     setTimeout(() => {
-      alert(`Opening email client for: ${email}\n\nIf your email client didn't open, please email me directly at: ${email}`);
-    }, 100);
+      if (confirm(`Opening email for: ${email}\n\nClick OK if your email client opened, or Cancel to copy the email address.`)) {
+        return;
+      } else {
+        // Copy to clipboard if available
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(email);
+          alert('Email address copied to clipboard!');
+        } else {
+          alert(`Please email me at: ${email}`);
+        }
+      }
+    }, 500);
   };
 
   const downloadResume = () => {
